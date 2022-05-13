@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build" : "npx nodeppt build index.md" ,
+    "serve" : "npx nodeppt serve index.md"
   },
   "repository": {
     "type": "git",
