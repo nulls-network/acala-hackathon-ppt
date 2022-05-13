@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nulls-network/acala-hackathon-ppt/issues"
   },
-  "homepage": "https://github.com/nulls-network/acala-hackathon-ppt#readme"
+  "homepage": "https://github.com/nulls-network/acala-hackathon-ppt#readme",
+  "devDependencies": {
+    "nodeppt": "^2.2.2"
+  }
 }
