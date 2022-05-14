@@ -17,8 +17,10 @@ By Five {.text-intro}
 
 [:fa-github: Github](https://github.com/nulls-network){.button.ghost}
 
-<slide class="bg-black aligncenter">
-# 数字货币的市场规模
+<slide :class="size-50" class="bg-black">
+### 愿景：为用户和商家提供通用支付服务
+### 基础：基于区块链搭建的去中心支付网络
+## 简称：DPay 支付系统
 
 <slide :class="size-50" class="bg-black" >
 ## 稳定币 24 小时使用统计
@@ -135,7 +137,7 @@ sequenceDiagram
     Note left of 清算网络 : 通过 OffChain-Worker<br/>监听其他网络中的订单<br/>支付消息，并记录在<br/>自己的清算网络中。
 ```
 <slide :class="size-80 bg-white" class="bg-black" >
-## 使用 Web3 的方式带来的改变之一 {.aligncenter}
+## 使用 Web3 的方式带来的改变 {.aligncenter}
 传统支付：对称签名通常使用 MD5 算法, 对称加密使用 DES 和 AES 算法。非对称使用 RSA 算法体系。
 
 ```mermaid
