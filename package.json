@@ -6,7 +6,8 @@
   "scripts": {
     "build" : "npx nodeppt build index.md" ,
     "build-en" : "npx nodeppt build index_en.md" ,
-    "serve" : "npx nodeppt serve index.md"
+    "serve" : "npx nodeppt serve index.md",
+    "serve_en" : "npx nodeppt serve index_en.md"
   },
   "repository": {
     "type": "git",

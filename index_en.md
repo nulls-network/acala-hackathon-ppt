@@ -18,15 +18,15 @@ By Five {.text-intro}
 [:fa-github: Github](https://github.com/nulls-network){.button.ghost}
 
 <slide :class="size-50" class="bg-black">
-### Vision：Provide general payment services for users and businesses
-### 基础：基于区块链搭建的去中心支付网络
-## 简称：DPay 支付系统
+### Vision：Provide universal payment services for users and merchants
+### Core: Blockchain-based decentralized payment network 
+## Project Name：DPay Payment System
 
 <slide :class="size-50" class="bg-black" >
-## 稳定币 24 小时使用统计
-不同网络中常见稳定币的交易数据
+## 24 hour usage statistics for Stablecoin
+Major stablecoin transactions on mainstream blockchain networks
 
-| 网络 | Token 类型 | 交易笔数(24h) | 交易总量（24h） |
+| Network | Token type | Number of transactions(24h) |  Volume of transactions（24h） |
 | :----------- | :------------: |:------------: | ------------: |
 | [tron.network](https://tronscan.org/)  | Tether USD | 1,887,378 | $50,999,484,858 |
 |                                        | USD Coin | 13,779 | $1,298,415,223 |
@@ -38,131 +38,131 @@ By Five {.text-intro}
 
 <slide :class="size-70" class="bg-black" >
 
-#### 为什么Tron网络中的稳定币体量与其他网络有如此大的差距？
-#### 这些交易来自何处？ {.text-content}
+#### Why is there such a large difference in stablecoin tx volume between the Tron and other networks?
+#### Where do these txs come from? {.text-content}
 
 --- 
 
-### 1. USDT 正在被场内和场外作为货币来使用
-### 2. 使用成本更低甚至接近为 0
-### 3. 大量应用于传统支付场景中
-### 4. 大量用于中心化支付系统中的交易数据未能捕获 
+### 1. USDT is being used as currency for floor and OTC trading 
+### 2. The tx cost is close to 0.
+### 3. They are widdly used in traditional payment scenarios.
+### 4. A considerable amount of transaction volumes in centralized payment systems are left to be captured 
 
 <slide :class="size-80" class="bg-black" image="https://webslides.tv/static/images/iphone-hand.png .right-bottom">
 
 :::{.content-left}
 
-### 数字货币使用场景
+### Use cases for digital currencies
 
 :::flexblock {.specs}
 ::fa-solid fa-arrow-down-up-across-line::
 
-## Defi & 资产调拨
+## Defi & Asset transfer
 
-区块链玩家链上交易，不同交易所和钱包间调拨资产。
+Blockchain users execute on-chain transactions and transfer assets between exchanges and wallets.
 
 ---
 
 ::fa-solid fa-earth-americas::
 
-## 跨境贸易
+## Cross-border trade
 
-Tiktok/Shopify 等线上电商，并行于 PayPal。
+Online e-commerce(Tiktok/Shopify etc), parallel to PayPal.
 
 ---
 
 ::fa-solid fa-film::
 
-## 娱乐行业
+## Entertainment industry
 
-视频/直播/竞技，规避全球不同地区的政策限制。
+Video/live broadcast/Game: Avoid policy restrictions in different regions.
 
 ---
 
 ::fa-solid fa-money-bill-transfer::
 
-## 跨境结算
+## Cross-border settlement
 
-视频/直播/竞技，规避全球不同地区的政策限制。
+Video/live/competition, Avoid policy restrictions in different regions.
 
 :::
 
 <slide :class="size-60" class="bg-black">
 
-### ::fa-solid fa-cube:: DPayment 是如何做数字货币支付系统的？
+### ::fa-solid fa-cube:: DPayment How to Create a Payment System for Digital Currency？
 
-DPayment 的理想是建设一套符合 Web3 规范的去中心化支付系统。{.text-intro}
+DPayment's goal is to create a decentralized payment system that follows the Web3 specifications. {.text-intro}
 
-* :WEB3 规范\::{.text-label} 商家和用户通过一个钱包即可开始使用。
-* :抽象复杂性\::{.text-label} 开发者和用户无需理解复杂的底层，即可通过 SDK 或前端产品使用该协议。
-* :无信任运行\::{.text-label} 通过智能合约和其他可信技术保障最低信任的运行。
-* :激励及安全\::{.text-label} 确保节点具有强大的经济动机来保证面对足够大的作弊诱惑时可靠和正确的运行。
-* :可靠的性能\::{.text-label} 基于 SubStrate 建设 Layer2 提供核心处理性能[（_***性能报告传送门***_）](https://github.com/nulls-network/chain-loadtest) 。
-* :大数据服务\::{.text-label} 早期由创始团队建设索引服务，开发者和商家通过该服务构建和使用系统。
-* :开发者社区\::{.text-label} 为社区注入激励，由社区驱动，完善产品和扩展产品边界。
+* :WEB3 Specifications\::{.text-label} Easy usage for users and merchants with just one wallet.
+* :Abstract complexity\::{.text-label}  Easy accessible SDKs for developers and user-friendly front-end for users without knowing the intricate underlying layers.
+* :Run without trust\::{.text-label} Smart contracts and other trusted technologies to ensure the functioning with minimum trust.
+* :Motivation and Safety\::{.text-label} Strong economic incentives for nodes to operate reliably and accurately.
+* :Reliable performance\::{.text-label} SubStrate-based Layer2 for reliable performance[（_***Performance Report***_）](https://github.com/nulls-network/chain-loadtest).
+* :Big data service\::{.text-label} Indexing service built by the founding team for developers and merchants to build and use the system.
+* :Developer community\::{.text-label} Improving products and expanding product boundaries by injecting incentives into the community.
 {.description}
 
 <slide :class="size-60" class="bg-black">
-## 与 Acala 生态的结合
-DPayment 支持多网络支付，在非清算链收款后，会通过跨链的方式，在清算链上Mint等值资产用于记账。为降低系统初期的建设难度，仅支持不同网络中的 USDT/USDC/DAI/BUSD 等稳定币作为收款货币，
-但支付可支付在付款链上有 LP Pair 的 Token 。通常 DPayment 完成收款后，会在清算链上登记交易，Mint 出等值的 DP-USD 资产为商家提供结算。
+## Integration with Acala 
+DPayment accepts payments from multiple blockchain networks. Once the payment is received in the non-clearing chain, equivalent assets on the clearing chain will be minted for accounting using a cross-chain mechanism. In the early stages of the system, only stable coins such as USDT/USDC/DAI/BUSD on different networks are supported as settlement currencies.
+But tokens with LP Pair on the payment chain are supported as payment currencies. DPayment will register the transaction on the clearing chain after it successfully received payment, and mint the equivalent DP-USD assets for merchant settlement.
 
 :::shadowbox
-## 为 Acala 网络提供活力.
-早期使用 Acala 网络作为清算网络，DPayment 将使用 Acala 网络用于记账和登记流水，商家也会通过 Acala 网络管理账户内的资产。DPayment 的 Callback 模式，也可以为 Acala 网络带来丰富的使用场景
+## Powering the Acala Network.
+The Acala network was utilized as the clearing network in the beginning. DPayment will use the Acala network for bookkeeping and registering the cash flow, and merchants will use the Acala network for asset management. DPayment's Callback mode can also offer a variety of usage scenarios to the Acala network.
 （[IDO Demo](https://opendao.dev)）。
 
 ---
 
 ## StableCoin - aUSD
-DP-USD 是一种 StableCoin 的 Wrapper Token ，于其他网络中的备付金资产是 1：1 发行。商家收到 DP-USD 后，可通过提现和付款操作，在其他网络中取出等值的 USDT/USDC/BUSD/DAI 等 StableCoin 。
-由于 aUSD 有更高的信用背书，可以替代 DP-USD 作为结算资产，增加 DPayment 结算资金担保的同时，为 aUSD 提供流动性使用场景。
+DP-USD is a Wrapper Token of Stablecoins, and the reserve assets in other networks are issued 1:1. After receiving DP-USD, merchants can withdraw StableCoins of equivalent value through withdrawal and payment operations, such as USDT/USDC/BUSD/DAI in other networks.
+Because aUSD has a greater credit endorsement, it can replace DP-USD as a settlement asset to enhance the DPayment settlement fund guarantee and provide usage situations for aUSD liquidity.
 
 :::
 
 <slide :class="size-70 bg-white" class="bg-black" >
-## 支付流程 {.aligncenter}
+## Payment process {.aligncenter}
 
 ```mermaid
 sequenceDiagram
-    买家 ->> 商家: 需要购买一台 IPhone 13.
-    商家 ->> 买家 : 生成订单凭证，打开收银台
-    买家 ->> 收款合约 : 选择网络和支付币种，为订单凭证支付。
-    收款合约 -->> 商家: 通知商家支付结果。
-    Note left of 收款合约 : 商家也可以通过监听清算网络<br />的合约事件确定交易结果。
-    商家 ->> 买家 : 为买家发货。
-    loop 监听交易
-        清算网络 -->> 收款合约 : 同步登记订单，记账
+    Buyer ->> Merchant: Requires purchase of an iPhone 13.
+    Merchan ->> Buyer : Generate order voucher, open the cashier
+    Buyer ->> Payment contract : Select network and payment currency to pay for order voucher.
+    Payment contract -->> Merchan: Notify merchants of payment status.
+    Note left of Payment contract : The merchant can also determine the transaction status by monitoring the contract events of the clearing network <br />.
+    Merchant ->> Buyer : Delivering goods to buyer.
+    loop monitoring transactions
+        Clearing network -->> Payment contract : Synchronize order registration and billing
     end 
-    Note left of 清算网络 : 通过 OffChain-Worker<br/>监听其他网络中的订单<br/>支付消息，并记录在<br/>自己的清算网络中。
+    Note left of clearing network : Through OffChain-Worker<br/>Monitor orders in other networks<br/>payment message，and recorded in<br/>in its own clearing network.
 ```
 <slide :class="size-80 bg-white" class="bg-black" >
-## 使用 Web3 的方式带来的改变 {.aligncenter}
-传统支付：对称签名通常使用 MD5 算法, 对称加密使用 DES 和 AES 算法。非对称使用 RSA 算法体系。
+## Changes in the way you use Web3 {.aligncenter}
+Traditional payment: Symmetric signature usually uses the MD5 algorithm, and symmetric encryption uses the DES and AES algorithms. Asymmetric use of RSA algorithm system。
 
 ```mermaid
 sequenceDiagram
-Note right of 商家 1 : 商家需要提供身份证明信息及通讯密钥
-商家 1 ->> 支付机构 : 申请开户
-商家 2 ->> DPayment : 使用钱包私钥签名
-Note left of DPayment : 不需要像传统服务机构一样，<br />通过账号体系与密钥绑定关系<br />
-Note left of 支付机构 : 支付机构将自己的通讯密钥<br />发送给商家，商家开始技术对接
-支付机构 ->> 商家 1 : 审核通过，开户成功
-DPayment ->> 商家 2 : 通过 Recover 获得签名公钥，直接记账
-商家 1 ->> 支付机构 : 用密钥签名订单请求
-支付机构 ->> 商家 1 : 用密钥验签,登记订单
+Note right of Merchant 1 : Merchants need to provide identification information and communication keys
+Merchant 1 ->> Payment institution : Apply for an account
+Merchant 2 ->> DPayment : Sign with wallet private key
+Note left of DPayment : Doesn't need to be like traditional service agencies，<br />Bidding the account with the private key<br />
+Note left of Payment institution : The payment institution sends its own communication key<br /> to the merchant, and the merchant starts the technical integration
+Payment institution ->> Merchant 1 : Approved, successful account opening
+DPayment ->> Merchant 2 : Obtain the signature public key through Recover and directly bookkeeping
+Merchant 1 ->> Payment institution : Sign order request with private key
+Payment institution ->> Merchant 1 : Verify signature with private key and register order
 ```
 
 <slide :class="size-80" class="bg-black">
 
 :::column {.vertical-align}
-## **订单的`安全性`和`便捷性`**
+## **`Security` and `Convenience` of orders**
 
-商家通过私钥对期望完成收款的订单进行签名，使用`EIP-191`的方式签名，得到订单证明。订单证明包含了目标收款的货币类型及金额。
+The merchant signs the order to be completed through the private key in the form of `EIP-191` to obtain the order proof. The order proof contains the token type and amount of the target payment.
 
-用户可以使用该证明，在 DPayment 支持的网络中进行支付。订单的有效性由合约判断，支付成功后在支付网络中生成订单事件。
+Users can use this proof to make payment in the network supported by Dpayment. The validity of the order is determined by the contract. After successful payment, an on-chain order event is generated in the payment network.
 
-DPayment 清算网络上会根据 `OffChain-Worker` 提交的订单证明和支付信息为商户清结算。
+The Dpayment clearing network will clear and settle for merchants according to the order proof and payment information submitted by `OffChain-Worker`.
 
 ----
 ```JSON
@@ -186,82 +186,82 @@ DPayment 清算网络上会根据 `OffChain-Worker` 提交的订单证明和支�
 :::
 
 ---
-**`当用户对 DPayment 的合约 Approved 后，用户可以离线签名支付请求后，由中间人承担支付 Gas 上链.`**{.alignleft}
+**`After the user has approved the Dpayment contracts, the user can sign the payment request offline and the middleman will pay the on-chain gas `**{.alignleft}
 
 <slide :class="aligncenter size-50" class="bg-black">
 
 ## DPayment TODO-List
 
 ----
-- [::fa-check-double::] 支付核心
-  - [:fa-check:]账户
-  - [:fa-check:]会计流水
-  - [:fa-check:]提现/付款
-- [:fa-check:] 收银台
-- [:fa-check:] 商户后台
-  - [:fa-check:]账户管理
-  - [:fa-check:]充值/提现
-  - [:fa-check:]订单/流水
-  - [:fa-horizontal-rule:]运营数据分析
+- [::fa-check-double::] Payment core
+  - [:fa-check:]Account
+  - [:fa-check:]Accounting cash flow
+  - [:fa-check:]Withdrawal / Payment
+- [:fa-check:] Cashier
+- [:fa-check:] Merchant backend
+  - [:fa-check:]Account management
+  - [:fa-check:]Deposit/ withdrawal
+  - [:fa-check:]Order / Cash flow
+  - [:fa-horizontal-rule:]Operational data analysis
 
-* [:fa-check:]开发者工具
+* [:fa-check:]Developer tools
   * [:fa-horizontal-rule:]SDK
-  * [:fa-check:]调试工具
-* [:fa-check:]索引服务
-  * [:fa-horizontal-rule:]数据仓库
+  * [:fa-check:]Debugger tools
+* [:fa-check:]Indexing Service
+  * [:fa-horizontal-rule:]Data repositories
   * [:fa-horizontal-rule:]JSON-RPC
-* [:fa-check:]社区治理
-  * [:fa-horizontal-rule:] 经济模型
+* [:fa-check:]Governance
+  * [:fa-horizontal-rule:] Economic model
   * [:fa-check:] OffChain-Worker
-  * [:fa-horizontal-rule:] 节点管理
+  * [:fa-horizontal-rule:] Node management
 
-+ [:fa-horizontal-rule:]扩展协议
-  + [:fa-horizontal-rule:]商家多签合约
-  + [:fa-horizontal-rule:]代理商合约
-  + [:fa-horizontal-rule:]销毁超级权限
-+ [:fa-check:]市场推广
-  + [:fa-check:]试点商户
-  + [:fa-horizontal-rule:]宣传资料
-+ [:fa-check:]融资情况
-  + [:fa-check:]天使轮
-  + [:fa-horizontal-rule:]种子轮
++ [:fa-horizontal-rule:]Extended protocol
+  + [:fa-horizontal-rule:]Multi-sign contracts for merchants
+  + [:fa-horizontal-rule:]Agent contract
+  + [:fa-horizontal-rule:]Destroy super permissions
++ [:fa-check:]Market promotion
+  + [:fa-check:]Pilot merchants
+  + [:fa-horizontal-rule:]Advertising
++ [:fa-check:]Financing history
+  + [:fa-check:]Angel round
+  + [:fa-horizontal-rule:]Seed round
 
 <slide class="bg-black-blue">
-## 核心团队介绍
+## Introduction of the core team
 :::column
 
 ### **:fa-graduation-cap: Johnson**
 
-雅虎中国区搜索事业部主要负责人；<br />
-百度搜索事业部华南区负责人; <br />
-汇付天下支付事业部市场负责人。 <br />
-作为联合创始人，负责投融资及整体运营。
+Head of Search Division at Yahoo China<br />
+Head of South China Region at Baidu Search Division <br />
+Head of Marketing, Payment Division, Huifu World. <br />
+As a co-founder, responsible for investment, financing and overall operations。
 
 ---
 ### **::fa-solid fa-user-graduate:: Johnathan**
 
-北京航空航天大学博士；<br/>
-北京航空航天大学区块链协会负责人；<br/>
-BTCU 区块链技术社区核心发起人;<br />
-研究领域主要涉及共识算法、区块链架构和 Defi。<br />
-曾组织策划Near中国行，Conflux高效社区宣讲会。<br />
-作为联合创始人，负责产品和社区建设。
+Ph.D., Beihang University <br/>
+Research areas mainly involve consensus algorithms, blockchain architecture and Defi.<br />
+Head of the Beihang University' Blockchain Association. <br/>
+Former engineer at Beijing Sogou Technology <br />
+Organized and planned the Near China tour and the Conflux efficient community seminar.<br />
+As a co-founder, responsible for product and community building.
 
 ---
 ### **::fa-solid fa-user-ninja:: Five**
 
-十年老技术，7 年支付/互联网开发经验，3 年区块链开发经验。<br />
-曾就职于高阳集团/恒生电子/腾讯等企业，并拥有多次创业经验。<br/>
-作为联合创始人，主要负责 DPayment 技术和产品相关工作。
+Ten years of technology experience, seven years of payment/Internet development experience, and three years of blockchain development experience. <br />
+He has worked for Hi Sun Group, Hundsun Electronics, and Tencent, among others, and has extensive entrepreneurial experience.<br/>
+As a co-founder, primarily responsible for DPayment technology and product development.
 
 ---
 ### **::fa-solid fa-user-tie:: Colin**
 
-高阳集团中国移动和包线下支付会生活业务负责人；<br />
-随行付支付公司天津分公司负责人、华北区运营主管、集团事业部运营总监；<br />
-商银信支付公司 COO。<br />
-拥有多次创业经验。<br />
-作为联合创始人，负责品牌运营。
+Head of offline payment business at Hi Sun Group <br />
+Tianjin Branch Manager, North China Region Operations Director, and Operation director of group business division at Suxingfu Payment Company <br />
+COO of Shangyinxin Payment Company  <br />
+Multiple entrepreneurial experience <br />
+As a co-founder, responsible for brand operations.
 
 ---
 :::
@@ -269,8 +269,8 @@ BTCU 区块链技术社区核心发起人;<br />
 
 <slide class="bg-black aligncenter" image="https://source.unsplash.com/RSOxw9X-suY/">
 
-## 我们不会创造历史，只是顺应潮流。{.animated.tada}
+## We don't make history, we just follow the trend. {.animated.tada}
 
-当 **Visa** 和 **Master** 宣布对俄罗斯普通民众停止服务的那一刻开始，**DPayment** 的机会来了！ {.text-into.animated.delay-800.fadeIn}
+When **Visa** 和 **Master** announced deny of service for ordinary Russian users, **DPayment** 's opportunity is coming! {.text-into.animated.delay-800.fadeIn}
 
 [::fa-solid fa-tornado:: DPay.System](https://dpay.systems){.button.animated.delay-1s.fadeInUp}
