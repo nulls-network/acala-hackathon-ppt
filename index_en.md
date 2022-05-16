@@ -18,7 +18,7 @@ By Five {.text-intro}
 [:fa-github: Github](https://github.com/nulls-network){.button.ghost}
 
 <slide :class="size-50" class="bg-black">
-### 愿景：为用户和商家提供通用支付服务
+### Vision：Provide general payment services for users and businesses
 ### 基础：基于区块链搭建的去中心支付网络
 ## 简称：DPay 支付系统
 
